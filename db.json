@@ -4,6 +4,21 @@
             "id": 1,
             "question": "Who was the first president?",
             "answer": "George Washington"
+        },
+        {
+            "id": 2,
+            "question": "The beaver is the national emblem of which country?",
+            "answer": "Canada"
+        },
+        {
+            "id": 3,
+            "question": "What kind of person shall not be honored on a US postal stamp, according to the US postal service and the Citizen’s Stamp Advisory Commitee?",
+            "answer": "A living person."
+        },
+        {
+            "id": 4,
+            "question": "The average human body contains how many pints of blood?",
+            "answer": "Nine."
         }
     ]
 }
