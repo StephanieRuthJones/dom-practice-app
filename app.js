@@ -39,6 +39,9 @@ const createNewTriviaCard = () => {
     const form = document.querySelector('.trivia-form')
     form.addEventListener('submit', event => {
         event.preventDefault()
+        const formData = new FormData(form)
+       
+        console.log("Fd", formData)
         let newQuestion = event.target.question.value
         let newAnswer = event.target.answer.value
         const triviaCard = document.createElement('div')
@@ -67,4 +70,6 @@ postTrivia = (question, answer) => {
             answer: answer
         })
     }).then(response => response.json())
+        .then(res => console.log(res))
+        .catch(error => console.log(error))
 }
