@@ -18,6 +18,31 @@ img {
     font-size: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.trivia-form {
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    border: solid;
+    padding: 30px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 30px;
+  }
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.form-button {
+    width: 40rem;
+    padding: 20px;
+}
 
 .trivia-card-container {
     margin: auto;

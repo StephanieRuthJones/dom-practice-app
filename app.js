@@ -3,9 +3,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
     fetch('http://jservice.io/api/clues')
         .then(response => response.json())
         .then(createHeader())
+        .then(createNewTriviaCard())
         .then(data => createCards(data))
+        .catch(error => console.log(error))
 
 })
+const triviaCardContainer = document.querySelector('#trivia-card-container')
 
 const createHeader = () => {
     const header = document.querySelector('#trivia-header')
@@ -16,7 +19,7 @@ const createHeader = () => {
 }
 
 const createCards = (data) => {
-    const triviaCardContainer = document.querySelector('#trivia-card-container')
+
     data.forEach(trivia => {
         const triviaCard = document.createElement('div')
         triviaCard.className = 'card'
@@ -30,4 +33,38 @@ const createCards = (data) => {
         triviaCardContainer.appendChild(triviaCard)
     })
 
+}
+
+const createNewTriviaCard = () => {
+    const form = document.querySelector('.trivia-form')
+    form.addEventListener('submit', event => {
+        event.preventDefault()
+        let newQuestion = event.target.question.value
+        let newAnswer = event.target.answer.value
+        const triviaCard = document.createElement('div')
+        triviaCard.className = 'card'
+        triviaCard.innerHTML = `
+            <img class="card-img-top" src="https://www.publicdomainpictures.net/pictures/160000/nahled/light-bulb-1458612887G8a.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Question: ${newQuestion}</h5>
+                <p class="card-text">Answer: ${newAnswer}</p>
+            </div>
+        `
+        triviaCardContainer.appendChild(triviaCard)
+
+        postTrivia(newQuestion, newAnswer)
+
+
+    })
+}
+
+postTrivia = (question, answer) => {
+    console.log("question", question)
+    fetch('url', {
+        method: 'post',
+        body: JSON.stringify({
+            question: question,
+            answer: answer
+        })
+    }).then(response => response.json())
 }
