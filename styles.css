@@ -1,0 +1,47 @@
+body {
+    align-content: center;
+}
+
+.trivia-header {   
+    height: 100%;
+    width: 100%;
+    
+}
+
+img {
+    height: 70%;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    font-size: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.trivia-card-container {
+    margin: auto;
+}
+
+.card {
+    height: 50%;
+    width: 50%;
+    border: solid;
+    padding: 20px;
+    margin: 20px; 
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    box-shadow: 7px 7px;
+}
+
+.card-img-top {
+    height: 25%;
+    width:25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
