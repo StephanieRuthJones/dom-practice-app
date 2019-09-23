@@ -3,7 +3,7 @@ Trivia App Directions:
 
 2. console.log() the response to see data and its structure
 
-3. Create an img tag
+3. Create an image to append to the header div
 
 4. Set img source to "https://2cadxu4apic638boqt1kzcoz-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/56553712_2391490011079150_2175175312202006528_n.jpg"
 
