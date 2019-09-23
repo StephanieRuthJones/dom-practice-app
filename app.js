@@ -10,10 +10,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 const createHeader = () => {
     const header = document.querySelector('#trivia-header')
     const headerImage = document.createElement('img')
+
     headerImage.src = "https://2cadxu4apic638boqt1kzcoz-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/56553712_2391490011079150_2175175312202006528_n.jpg"
     header.appendChild(headerImage)
-    console.log('header', header)
-    return header
 }
 
 const createCards = (data) => {
