@@ -1,8 +1,16 @@
-1. Create an img tag
-2. Set image source to "https://2cadxu4apic638boqt1kzcoz-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/56553712_2391490011079150_2175175312202006528_n.jpg"
-3. Append to "trivia-header"
+Trivia App Directions:
+1. Fetch trivia questions and answers from this url: 'http://jservice.io/api/clues'
 
-4. Create bootstrap cards (with src, class, and inner text) for each trivia question: 
+2. console.log() the response to see data and its structure
+
+3. Create an img tag
+
+4. Set img source to "https://2cadxu4apic638boqt1kzcoz-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/56553712_2391490011079150_2175175312202006528_n.jpg"
+
+5. Append to "trivia-header"
+
+6. Create bootstrap cards (with src, class, and inner text) for each trivia question: 
+
 <div class="card">
     <img
     class="card-img-top" src="..." alt="Card image cap">
@@ -11,5 +19,6 @@
         <p class="card-text">Answer: ...</p>
     </div>
 </div>
-5. Append bootstrap cards to "trivia-card-container"
+
+7. Append bootstrap cards to "trivia-card-container"
 
