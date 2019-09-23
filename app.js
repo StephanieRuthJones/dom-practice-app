@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed')
-    fetch('http://jservice.io/api/clues')
+    fetch(' http://localhost:3000/trivia')
         .then(response => response.json())
         .then(createHeader())
         .then(createNewTriviaCard())
@@ -40,7 +40,7 @@ const createNewTriviaCard = () => {
     form.addEventListener('submit', event => {
         event.preventDefault()
         const formData = new FormData(form)
-       
+
         console.log("Fd", formData)
         let newQuestion = event.target.question.value
         let newAnswer = event.target.answer.value
