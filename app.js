@@ -20,22 +20,14 @@ const createCards = (data) => {
     data.forEach(trivia => {
         const triviaCard = document.createElement('div')
         triviaCard.className = 'card'
-        const image = document.createElement('img')
-        image.className = 'card-img-top'
-        image.src = "https://www.publicdomainpictures.net/pictures/160000/nahled/light-bulb-1458612887G8a.jpg"
-        const cardBody = document.createElement('div')
-        cardBody.className = 'card-body'
-        const question = document.createElement('h5')
-        question.innerText = `Question: ${trivia.question}`
-        const answer = document.createElement('p')
-        answer.className = 'card-text'
-        answer.innerText = `Answer: ${trivia.answer}`
-
-        cardBody.append(question, answer)
-        triviaCard.append(image, cardBody)
+        triviaCard.innerHTML = `
+            <img class="card-img-top" src="https://www.publicdomainpictures.net/pictures/160000/nahled/light-bulb-1458612887G8a.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Question: ${trivia.question}</h5>
+                <p class="card-text">Answer: ${trivia.answer}</p>
+            </div>
+        `
         triviaCardContainer.appendChild(triviaCard)
-        console.log("trivia card", triviaCard)
-
     })
 
 }
