@@ -2,11 +2,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed')
     fetch('http://jservice.io/api/clues')
         .then(response => response.json())
-        // .then(data => console.log(data))
-        .then(res => createCards(res))
         .then(createHeader())
-
-
+        .then(data => createCards(data))
 
 })
 
