@@ -20,6 +20,7 @@ THEN:
 
 6. Create bootstrap cards (with src, class, and inner text) for each trivia question: 
 
+```
 <div class="card">
     <img
     class="card-img-top" src="..." alt="Card image cap">
@@ -28,6 +29,7 @@ THEN:
         <p class="card-text">Answer: ...</p>
     </div>
 </div>
+```
 
 7. Append bootstrap cards to "trivia-card-container"
 

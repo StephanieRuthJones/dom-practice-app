@@ -1,13 +1,13 @@
-window.addEventListener('DOMContentLoaded', (event) => {
-    console.log('DOM fully loaded and parsed')
+fetch(`http://localhost:3000/trivia`)
+    .then(response => response.json())
+    .then(triviaData => console.log(triviaData))
+    .catch(error => console.log(error))
 
 
-})
+// const createHeader = () => {
 
-const createHeader = () => {
+// }
 
-}
+// const createCards = (data) => {
 
-const createCards = (data) => {
-
-}
+// }
